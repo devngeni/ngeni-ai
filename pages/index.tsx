@@ -1,5 +1,5 @@
 import { Layout } from '@/layout'
-import { LandingSection } from '@/components'
+import { LandingSection, Navbar } from '@/components'
 
 
 export default function Home() {

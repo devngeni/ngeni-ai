@@ -1,3 +1,4 @@
+import { Navbar } from "@/components";
 import Head from "next/head";
 
 interface LayoutProps {
@@ -11,9 +12,9 @@ export default function Layout({ children }: LayoutProps) {
         <title>NGENI AI</title>
         <meta name="description" content="Unlocking The Future" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
-      {/* Place you <Navbar /> here */}
+      <Navbar/>
       <main>{children}</main>
       {/* Place you <Footer /> here */}
     </>
