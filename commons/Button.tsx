@@ -10,6 +10,5 @@ height: 70px;
 font-size: 18px;
 @media(min-width:769px){
     font-size: 20px;
-    w
 }
 `
