@@ -91,6 +91,7 @@ export const ProjectButton = styled(LearnButton)`
   background: none;
   border: 1px solid #3eb9ba;
   cursor: pointer;
+  justify-content: center;
   text-align: center;
   &:hover {
     background: #3eb9ba;
