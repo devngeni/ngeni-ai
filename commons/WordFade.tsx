@@ -102,14 +102,11 @@ const WordFlick: React.FC<WordFlickProps> = ({
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-const flickerStyles = css`font-size: `
-  // const firstWord = part.slice(1);
+  const flickerStyles = css`
+    font-size: ;
+  `;
 
-  return (
-    <StyledWord>
-      {part}
-    </StyledWord>
-  );
+  return <StyledWord>{part}</StyledWord>;
 };
 
 export default WordFlick;
