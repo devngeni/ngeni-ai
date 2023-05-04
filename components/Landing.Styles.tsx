@@ -1,8 +1,6 @@
 import { Title } from "@/commons";
-import { button } from "@/commons/Button";
 import styled from "styled-components";
 
-const screen = "769px";
 export const LandingContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -52,7 +50,7 @@ export const AiBody = styled.p`
   font-size: 1.2rem;
   text-align: center;
   padding: 0 1rem;
-  @media (min-width: ${screen}) {
+  @media (min-width: 769px) {
     padding: 0 5rem;
     font-size: 2rem;
     line-height: 33px;
@@ -65,24 +63,36 @@ export const ButtonContainer = styled.div`
   gap: 2rem;
   padding: 1rem;
 `;
-export const LearnButton = styled(button)`
+export const LearnButton = styled.button`
   background: #3eb9ba;
   border: none;
   cursor: pointer;
   width: 172px;
   display: flex;
   align-items: center;
+  border-radius: 0.5rem;
+  padding: 1.375rem 2rem;
+  color: #fff;
+  height: 70px;
+  font-size: 18px;
+
   &:hover {
     background: none;
     border: 1px solid #3eb9ba;
     transition: 0.3s all ease-in-out;
   }
+  @media (min-width: 769px) {
+    font-size: 20px;
+    justify-content: center;
+  }
 `;
 
-export const ProjectButton = styled(button)`
+export const ProjectButton = styled(LearnButton)`
   background: none;
   border: 1px solid #3eb9ba;
   cursor: pointer;
+  justify-content: center;
+  text-align: center;
   &:hover {
     background: #3eb9ba;
     transition: 0.3s all ease-in-out;
