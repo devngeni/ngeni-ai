@@ -72,8 +72,11 @@ export const NavLinks = styled.div`
 
 export const IconWrapper = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   cursor: pointer;
+  img:hover{
+    filter: invert(63%) sepia(42%) saturate(558%) hue-rotate(125deg) brightness(96%) contrast(90%);
+  }
 `;
 
 export const ImageContainer = styled.div`
