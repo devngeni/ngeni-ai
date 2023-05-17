@@ -23,8 +23,12 @@ export default function Navbar() {
             <Link href="/">Roadmap</Link>
           </NavLinks>
           <IconWrapper>
-            <Image src="/Git.svg" alt="git icon" width={22} height={22} />
-            <Image src="/Ai.svg" alt="Ai icon" width={22} height={22} />
+            <Link href={"https://github.com/devngeni"} target="blank">
+            <Image src="/Git.svg" alt="git icon" width={28} height={28} />
+            </Link>
+            <Link href={"#"}>
+            <Image src="/Discord.svg" alt="Discord icon" width={28} height={28} />
+            </Link>
           </IconWrapper>
         </LinkWrapper>
       </NavWrapper>
