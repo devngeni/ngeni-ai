@@ -47,13 +47,13 @@ export const AiSub = styled.h2`
 export const AiBody = styled.p`
   font-weight: 500;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: clamp(16px, calc(1rem + ((1vw - 3.6px) * 0.2564)), 20px);
   text-align: center;
   padding: 0 1rem;
   @media (min-width: 769px) {
     padding: 0 5rem;
-    font-size: 2rem;
     line-height: 33px;
+    letter-spacing: 0.72px;
   }
 `;
 export const ButtonContainer = styled.div`
