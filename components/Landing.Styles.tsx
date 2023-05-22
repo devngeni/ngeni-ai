@@ -14,7 +14,7 @@ export const LandingContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
-    background-size: 100%;
+    background-size: 100% 40%;
     background-position: bottom;
   }
 `;
