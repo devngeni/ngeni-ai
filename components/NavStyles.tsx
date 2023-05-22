@@ -4,15 +4,14 @@ const mdScreen = "769px";
 
 export const Nav = styled.nav`
   width: 100%;
+  height: 100px;
   display: flex;
   align-content: center;
   justify-items: center;
   position: absolute;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
   z-index: 100;
-  top: 3%;
 `;
 export const NavWrapper = styled.div`
   display: flex;
