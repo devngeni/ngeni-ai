@@ -14,19 +14,29 @@ const HamburgerButton = styled.button`
   font-size: 2.2rem;
   border: none;
 `;
-
+const TextCopyRight = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ebebeb;
+  span {
+    padding: 1rem 0 0 0;
+  }
+`;
 const MenuContainer = styled(animated.div)`
+  background: linear-gradient(269.94deg, #4575df -7.83%, #3ebeb8 103.13%);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 50vh;
-  background: #fff;
   border-radius: 8px 8px 0px 0px;
 `;
 
 const ContentContainer = styled.div`
-  margin-top: 48px;
+  margin-top: 18px;
   width: 100%;
   height: calc(50vh - 36px);
   border-radius: 8px 8px 0px 0px;
@@ -54,6 +64,9 @@ const HamburgerMenu = () => {
       {transitions((style: any, item: any) =>
         item ? (
           <MenuContainer style={style}>
+            <TextCopyRight>
+              <span>&#169; {new Date().getFullYear()} NGENI. All Rights Reserved.</span>
+            </TextCopyRight>
             <ContentContainer className="started-bg">
               <LinkWrapper>
                 <NavLinks>

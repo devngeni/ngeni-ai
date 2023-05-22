@@ -13,6 +13,10 @@ export const LandingContainer = styled.div`
   background: url("/LooperBG.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  @media (max-width: 768px) {
+    background-size: 100%;
+    background-position: bottom;
+  }
 `;
 
 export const LandingWrapper = styled.div`
@@ -84,6 +88,7 @@ export const LearnButton = styled.button`
   }
   @media (max-width: 768px) {
     width: 40%;
+    height: 52px;
   }
 `;
 
