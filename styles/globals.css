@@ -1,19 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Montserrat:wght@300;600;900&family=Noto+Sans+HK:wght@100;400&family=Quicksand:wght@300&family=Syncopate:wght@400;700&family=Urbanist:wght@600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 html,
 body {
   background-color: black;
   font-family: "Montserrat", sans-serif;
   justify-content: center;
-}
-:root{
-  height: 100%;
-  width: 100vw;
-  margin: 0;
-  padding:0;
-}
-*{
-  box-sizing: border-box;
-  padding:0;
   margin: 0;
 }
+
+

@@ -16,7 +16,7 @@ export const Nav = styled.nav`
 `;
 export const NavWrapper = styled.div`
   display: flex;
-  width: 70%;
+  width: 80%;
   justify-content: space-between;
   position: relative;
   @media (max-width: 768px) {
@@ -28,19 +28,32 @@ export const NavWrapper = styled.div`
 export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: clamp(16px, calc(1rem + ((1vw - 3.6px) * 0.2564)), 20px);
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   flex-direction: row;
   gap: 10px;
 `;
 
 export const NavLinks = styled.div`
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+  a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: clamp(16px, calc(1rem + ((1vw - 3.6px) * 0.1282)), 18px);
+  }
   @media (min-width: 769px) {
     display: flex;
-    gap: 5rem;
+    flex-direction: row;
+    gap: 4rem;
     cursor: pointer;
+    font-weight: 500;
+    line-height: 22px;
+    align-items: center;
+    justify-content: center;
     a {
       text-decoration: none;
       color: #fff;
@@ -74,8 +87,11 @@ export const IconWrapper = styled.div`
   display: flex;
   gap: 1.5rem;
   cursor: pointer;
-  img:hover{
-    filter: invert(63%) sepia(42%) saturate(558%) hue-rotate(125deg) brightness(96%) contrast(90%);
+  align-items: center;
+  a:hover {
+    path {
+      fill: #3eb9ba;
+    }
   }
 `;
 
@@ -92,4 +108,13 @@ export const LinkWrapper = styled.div`
   display: flex;
   flex-direction: row;
   gap: 60px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0;
+    height: 80%;
+  }
 `;

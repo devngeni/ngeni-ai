@@ -16,16 +16,16 @@ export const LandingContainer = styled.div`
 `;
 
 export const LandingWrapper = styled.div`
-  width: 55%;
+  width: 80%;
   height: initial;
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  align-item: center;
-  align-content: center;
+  gap: 1.4rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   @media (max-width: 768px) {
     width: 100%;
-    gap: 40px;
   }
 `;
 export const AiTitle = styled(Title)``;
@@ -35,7 +35,7 @@ export const AiSub = styled.h2`
   margin: 0;
   text-align: center;
   font-weight: 700;
-  font-size: 60px;
+  font-size: clamp(30px, calc(1.875rem + ((1vw - 3.6px) * 1.9231)), 60px);
   line-height: 73px;
   letter-spacing: 0.02em;
 
@@ -45,15 +45,15 @@ export const AiSub = styled.h2`
 `;
 
 export const AiBody = styled.p`
-  font-weight: 500;
+  font-weight: 300;
   color: #fff;
   font-size: clamp(16px, calc(1rem + ((1vw - 3.6px) * 0.2564)), 20px);
   text-align: center;
-  padding: 0 1rem;
   @media (min-width: 769px) {
-    padding: 0 5rem;
     line-height: 33px;
     letter-spacing: 0.72px;
+    align-self: center;
+    width: 50%;
   }
 `;
 export const ButtonContainer = styled.div`
@@ -61,29 +61,29 @@ export const ButtonContainer = styled.div`
   width: 100%;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
 `;
 export const LearnButton = styled.button`
+  font-family: "Space Grotesk", sans-serif;
   background: #3eb9ba;
   border: none;
   cursor: pointer;
   width: 172px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
-  padding: 1.375rem 2rem;
-  color: #fff;
+  line-height: 26px;
+  color: #ebebeb;
   height: 70px;
-  font-size: 18px;
-
+  font-size: clamp(16px, calc(1rem + ((1vw - 3.6px) * 0.2564)), 20px);
+  font-weight: 400;
   &:hover {
     background: none;
     border: 1px solid #3eb9ba;
     transition: 0.3s all ease-in-out;
   }
-  @media (min-width: 769px) {
-    font-size: 20px;
-    justify-content: center;
+  @media (max-width: 768px) {
+    width: 40%;
   }
 `;
 
@@ -91,7 +91,6 @@ export const ProjectButton = styled(LearnButton)`
   background: none;
   border: 1px solid #3eb9ba;
   cursor: pointer;
-  justify-content: center;
   text-align: center;
   &:hover {
     background: #3eb9ba;

@@ -28,7 +28,9 @@ export default function LandingSection() {
         {isSmallScreen ? (
           <Fade duration={2000} direction="down">
             <Title>Unlocking The Future</Title>
-            <AiSub><WordFlick words={["NGENI AI"]}></WordFlick></AiSub>
+            <AiSub>
+              <WordFlick words={["NGENI AI"]}></WordFlick>
+            </AiSub>
           </Fade>
         ) : (
           <Fade duration={2000} direction="down">
@@ -38,17 +40,15 @@ export default function LandingSection() {
             <AiSub>NGENI AI</AiSub>
           </Fade>
         )}
-        <Fade direction="up" duration={2000}>
-          <AiBody>
-            Empower your business with the future of technology. Join us in
-            revolutionizing industries with our cutting-edge AI and machine
-            learning solutions.
-          </AiBody>
-          <ButtonContainer>
-            <LearnButton>Learn More</LearnButton>
-            <ProjectButton>Projects</ProjectButton>
-          </ButtonContainer>
-        </Fade>
+        <AiBody>
+          Empower your business with the future of technology. Join us in
+          revolutionizing industries with our cutting-edge AI and machine
+          learning solutions.
+        </AiBody>
+        <ButtonContainer>
+          <LearnButton>Learn More</LearnButton>
+          <ProjectButton>Projects</ProjectButton>
+        </ButtonContainer>
       </LandingWrapper>
     </LandingContainer>
   );
